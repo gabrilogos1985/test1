@@ -9,7 +9,7 @@ public class GitTest {
 	private final class EClassImp implements Eclass {
 		@Override
 		public boolean didIt() {
-			return false;
+			return true;
 		}
 	}
 
