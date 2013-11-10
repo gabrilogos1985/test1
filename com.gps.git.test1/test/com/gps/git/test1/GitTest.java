@@ -11,8 +11,8 @@ public class GitTest {
 		public boolean didIt() {
 			return true;
 		}
+
 		public void setTimer(final int timer, final boolean data){
-			
 		}
 	}
 
