@@ -12,7 +12,7 @@ public class GitTest {
 			return true;
 		}
 		
-		public void setTimer(int timer){
+		public void setTimer(final int timer){
 			
 		}
 	}
