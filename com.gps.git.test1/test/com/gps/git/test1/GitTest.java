@@ -6,17 +6,21 @@ import org.junit.Test;
 
 public class GitTest {
 
-private Eclass eclass = new EClassImp();
-
 	private final class EClassImp implements Eclass {
 		@Override
 		public boolean didIt() {
 			return true;
 		}
+		
+		public void setTimer(int timer){
+			
+		}
 	}
 
 	@Test
-	public void test() {		
+	public void test() {
+		Eclass eclass = new EClassImp();
+		
 		assertTrue(eclass.didIt());
 	}
 
