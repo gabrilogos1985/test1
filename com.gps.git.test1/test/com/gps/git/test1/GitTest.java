@@ -6,6 +6,8 @@ import org.junit.Test;
 
 public class GitTest {
 
+private Eclass eclass = new EClassImp();
+
 	private final class EClassImp implements Eclass {
 		@Override
 		public boolean didIt() {
@@ -14,8 +16,7 @@ public class GitTest {
 	}
 
 	@Test
-	public void test() {
-		Eclass eclass = new EClassImp();
+	public void test() {		
 		assertTrue(eclass.didIt());
 	}
 
