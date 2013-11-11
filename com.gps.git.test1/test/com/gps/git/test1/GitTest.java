@@ -13,15 +13,15 @@ private Eclass eclass = new EClassImp();
 			return true;
 		}
 
-		public void setTimer(final int timer, final boolean data){
+		public void setTimer(final int timer, final boolean data) {
+			System.out.println("Data: " + timer + data);
 		}
 	}
 
 	@Test
 	public void test() {
-		
-		
 		assertTrue(eclass.didIt());
+		new EClassImp().setTimer(-3,true);;
 		((EClassImp)eclass).setTimer(10,true);
 	}
 
