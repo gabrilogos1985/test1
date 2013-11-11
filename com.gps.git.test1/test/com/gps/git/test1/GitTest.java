@@ -12,15 +12,17 @@ public class GitTest {
 			return true;
 		}
 
-		public void setTimer(final int timer, final boolean data){
+		public void setTimer(final int timer, final boolean data) {
+			System.out.println("Data: " + timer + data);
 		}
 	}
 
 	@Test
 	public void test() {
 		Eclass eclass = new EClassImp();
-		
+
 		assertTrue(eclass.didIt());
+		new EClassImp().setTimer(-3,true);;
 	}
 
 }
