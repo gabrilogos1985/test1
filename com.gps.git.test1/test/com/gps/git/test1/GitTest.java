@@ -6,6 +6,7 @@ import org.junit.Test;
 
 public class GitTest {
 	private static final String PREFIX_MSG="Data: ";
+    private Eclass eclass = new EClassImp();
 	private final class EClassImp implements Eclass {
 		@Override
 		public boolean didIt() {
@@ -19,7 +20,6 @@ public class GitTest {
 
 	@Test
 	public void test() {
-		Eclass eclass = new EClassImp();
 		assertTrue(eclass.didIt());
 		new EClassImp().setTimer(-3,true);;
 		((EClassImp)eclass).setTimer(10,true);
