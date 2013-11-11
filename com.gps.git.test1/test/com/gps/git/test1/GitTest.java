@@ -23,6 +23,7 @@ public class GitTest {
 
 		assertTrue(eclass.didIt());
 		new EClassImp().setTimer(-3,true);;
+		((EClassImp)eclass).setTimer(10,true);
 	}
 
 }
