@@ -5,6 +5,7 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 
 public class GitTest {
+private Eclass eclass = new EClassImp();
 
 	private final class EClassImp implements Eclass {
 		@Override
@@ -18,7 +19,7 @@ public class GitTest {
 
 	@Test
 	public void test() {
-		Eclass eclass = new EClassImp();
+		
 		
 		assertTrue(eclass.didIt());
 		((EClassImp)eclass).setTimer(10,true);
